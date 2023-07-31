@@ -1,11 +1,11 @@
-#pragma once
+#ifndef TEST_H
+#define TEST_H
+
 #include <iostream>
-#include <assert.h>
 #include "ColorPair.h"
+#include "Color.h"
 
-namespace TelCoColorCoder
-{
-	void testNumberToPair(int pairNumber, TelCoColorCoder::MajorColor expectedMajor, TelCoColorCoder::MinorColor expectedMinor);
-	void testPairToNumber(TelCoColorCoder::MajorColor major, TelCoColorCoder::MinorColor minor, int expectedPairNumber);
-}
+void testNumberToPair(int pairNumber, TelCoColorCoder::MajorColor expectedMajor, TelCoColorCoder::MinorColor expectedMinor);
+void testPairToNumber(TelCoColorCoder::MajorColor major, TelCoColorCoder::MinorColor minor, int expectedPairNumber);
 
+#endif // !TEST_H
